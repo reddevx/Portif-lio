@@ -5,15 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Coutinho</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 </body>
-  <nav></nav>
-  <header></header>
-  <main></main>
+  <div class="flex flex-row min-h-screen overflow-hidden">
+  <nav>
+    <div class="bg-red-300 w-12 lg:w-72 md:none">
+      <div class="flex flex-row">
+
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="bg-blue-300"> Header</div>
+  </header>
   <section></section>
   <footer></footer>
+ </div>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+ </main>
 </html>
