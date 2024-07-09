@@ -1,90 +1,338 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Coutinho</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/static/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        /* Estilo para o botão de voltar ao topo */
+        .btn-top {
+            position: fixed;
+            bottom: 4%;
+            right: 4%;
+            display: none;
+            z-index: 999;
         }
-      }
-    }
-  </script>
+        /* Estilo para o botão de WhatsApp */
+        .btn-whatsapp {
+            position: fixed;
+            bottom: 4%;
+            left: 4%;
+            display: none;
+            z-index: 999;
+        }
+      
+    </style>
 </head>
-</body>
-  <div class="flex flex-row min-h-screen overflow-hidden">
-  <nav>
-    <div class="bg-grey-100 w-12 lg:w-72 md:none">
-      <div class="flex flex-none w-full justify-center items-center lg:py-16 ">
-        <div>
-          <p class="text-gray-900 text-1x1 font-extrabold items-center lg:visible animate-pulse invisible">Desenvolvedor <span>Fullstack</span></p>
-        </div>    
+<body class="bg-white text-gray-900">
+
+  <nav class="bg-white dark:bg-gray-900 fixed top-0 left-0 w-full z-50">
+    <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white">Juan Coutinho</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Abrir menu principal</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+      <div class="hidden w-full bg-white md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium bg-white flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 hover:bg-gray-100 md:hover:bg-transparent dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-300 ease-in-out">Home</a>
+          </li>
+          <li>
+            <a href="#sobre" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-300 ease-in-out">Sobre</a>
+          </li>
+          <li>
+            <a href="#projetos" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-300 ease-in-out">Projetos</a>
+          </li>
+          <li>
+            <a href="#habilidades" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-300 ease-in-out">Habilidades</a>
+          </li>
+          <li>
+            <a href="#contato" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-300 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-300 ease-in-out">Contato</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <nav class="visible lg:invisible flex w-full mt-40">
-      <ul class="text-left">
-        <li class="list-inside ml-2 mb-6 w-12">
-          <a href="" class="flex justify-start">
-            <i class="bi bi-github text-2xl"></i>
-          </a>
-        </li>
-        <li class="list-inside ml-2 mb-6 w-12">
-          <a href="" class="flex justify-start">
-            <i class="bi bi-linkedin text-2xl"></i>
-          </a>
-        </li>
-        <li class="list-inside ml-2 mb-6 w-12">
-
-        </li>
-      </ul>  
-    </nav>
-    <br><br>
-    <nav class="lg:visible invisible flex w-full -mt-80">
-      <ul class="text-left">
-        <li class="list-inside border-b-2 w-52 border-red-400 border-opacity-25 mx-8 mb-6 pb-3 font-medium hover:text-red-800">
-          <a href="#" class="flex justify-start">
-            <i class="bi bi-github object-contain mr-2"></i>
-            Github
-          </a>
-        </li>
-        <li class="list-inside border-b-2 w-52 border-red-400 border-opacity-25 mx-8 mb-6 pb-3 font-medium hover:text-red-800">
-          <a href="#" class="flex justify-start">
-            <i class="bi bi-github object-contain mr-2"></i>
-            Github
-          </a>
-        </li>
-        <li class="list-inside border-b-2 w-52 border-red-400 border-opacity-25 mx-8 mb-6 pb-3 font-medium hover:text-red-800">
-          <a href="#" class="flex justify-start">
-            <i class="bi bi-github object-contain mr-2"></i>
-            Github
-          </a>
-        </li>
-        <li class="list-inside border-b-2 w-52 border-red-400 border-opacity-25 mx-8 mb-6 pb-3 font-medium hover:text-red-800">
-          <a href="#" class="flex justify-start">
-            <i class="bi bi-github object-contain mr-2"></i>
-            Github
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <p class="lg:visible invisible text-center text-xs font-medium text-gray-400 w-full">Copyright 2022. Juan Dev</p>
   </nav>
-  <header>
-    <div class="bg-blue-300"> Header</div>
-  </header>
-  <section></section>
-  <footer></footer>
- </div>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
- </main>
+  
+  
+<!-- Sobre mim -->
+<section id="sobre" class="py-20 bg-gray-100 p-10 mt-20">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center">
+        <div class="relative w-56 h-56 md:w-72 md:h-72 overflow-hidden shadow-lg fade-in group rounded-lg border-4 border-gray-300 bg-gradient-to-br from-blue-500 to-purple-500">
+          <img src="/static/img/WhatsApp_Image_2024-06-30_at_22.36.55-removebg-preview.png" alt="Juan Coutinho" class="object-cover w-full h-full">
+        </div>
+                
+      </div>
+      <div class="md:w-1/2 text-left fade-in space-y-4">
+        <h1 class="text-5xl font-bold text-gray-800">Juan Coutinho</h1>
+        <p class="text-xl leading-relaxed font-medium text-gray-600">Desenvolvedor Web Fullstack</p>
+        <ul class="flex space-x-4 text-2xl text-gray-800">
+          <li><a href="#" class="hover:text-green-500"><i class="bi bi-whatsapp"></i></a></li>
+          <li><a href="#" class="hover:text-gray-900"><i class="bi bi-github"></i></a></li>
+          <li><a href="#" class="hover:text-blue-500"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+        <button class="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 transform hover:translate-x-1">
+          Mande uma Mensagem
+          <svg class="w-5 h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </button>
+        <div class="relative mt-5">
+          <button id="copyEmailButton" class="flex items-center text-1xl bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 relative">
+            <i class="bi bi-send-fill mr-4 p-1"></i><span class="font-bold p-1">juan.devx@gmail.com</span>
+          </button>
+          <span id="tooltipText" class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm py-1 px-2 rounded opacity-0 transition-opacity duration-300 group-hover:opacity-100">Copiar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('copyEmailButton').addEventListener('click', function() {
+  const email = 'juan.devx@gmail.com';
+  const el = document.createElement('textarea');
+  el.value = email;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+
+  const tooltipText = document.getElementById('tooltipText');
+  tooltipText.innerText = 'Copiado!';
+  setTimeout(function() {
+    tooltipText.innerText = 'Copiar';
+  }, 2000);
+});
+</script>
+
+<style>
+#copyEmailButton:hover + #tooltipText {
+  opacity: 1;
+}
+</style>
+
+
+<script>
+document.getElementById('copyEmailButton').addEventListener('click', function() {
+  const email = 'juan.devx@gmail.com';
+  const el = document.createElement('textarea');
+  el.value = email;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+
+  const tooltipText = document.getElementById('tooltipText');
+  tooltipText.innerText = 'Copiado!';
+  setTimeout(function() {
+    tooltipText.innerText = 'Copiar';
+  }, 2000);
+});
+</script>
+
+
+
+<button id="btnScrollToTop" title="Voltar ao Topo">↑</button>
+
+<!-- Botão do WhatsApp -->
+<a href="https://wa.me/1234567890" class="btn-whatsapp bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg shadow-md" target="_blank"><i class="bi bi-whatsapp"></i></a>
+<script>
+  // Mostrar/esconder o botão de voltar ao topo
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      var btnTop = document.getElementById("btnTop");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          btnTop.style.display = "block";
+      } else {
+          btnTop.style.display = "none";
+      }
+  }
+
+  function topFunction() {
+      document.body.scrollTop = 0; // Para Safari
+      document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+  }
+
+  // Mostrar o botão do WhatsApp
+  window.addEventListener("scroll", function() {
+      var btnWhatsApp = document.querySelector('.btn-whatsapp');
+      btnWhatsApp.style.display = "block";
+  });
+</script>
+
+<style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const faders = document.querySelectorAll('.fade-in');
+    const options = {
+      threshold: 0.1
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add('visible');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  });
+</script>
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Sobre mim
+          </h2>
+          <p class="mt-4 text-lg text-gray-600">
+              Olá! Meu nome é Juan e sou um desenvolvedor Fullstack apaixonado por criar soluções web eficientes. Com experiência em Ruby on Rails, PHP e muito mais, estou sempre buscando aprender e evoluir minhas habilidades.
+          </p>
+      </div>
+  </div>
+</section>
+
+
+  
+
+<!-- Projetos -->
+<section id="projetos" class="py-20 mt-10 bg-gray-100 dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 ">Projetos</h2>
+      <!-- Exemplo de lista de projetos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Projeto 1 -->
+        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+          <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+          <div class="flex justify-center space-x-4">
+            <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">GitHub</a>
+            <a href="https://www.seusite.com/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">Ver site</a>
+          </div>
+        </div>
+        <!-- Projeto 2 -->
+        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+          <img src="https://raw.githubusercontent.com/reddevx/payflow-php/master/static/images/scrennshot.png" alt="Projeto 2" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-bold mb-2">PayFlow</h3>
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+          <div class="flex justify-center space-x-4">
+            <a href="https://github.com/seu-usuario/projeto-2" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">GitHub</a>
+            <a href="https://payflow-php.000webhostapp.com/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">Ver site</a>
+          </div>
+        </div>
+        <!-- Projeto 3 -->
+        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+          <img src="/caminho/para/sua/imagem3.jpg" alt="Projeto 3" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-bold mb-2">Projeto 3</h3>
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+          <div class="flex justify-center space-x-4">
+            <a href="https://github.com/seu-usuario/projeto-3" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">GitHub</a>
+            <a href="https://www.seusite.com/projeto-3" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">Ver site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12 ">Habilidades</h2>
+                <!-- Lista de habilidades -->
+                <ul class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+                    <li class="bg-white p-6 shadow-lg rounded-lg">HTML</li>
+                    <li class="bg-white p-6 shadow-lg rounded-lg">CSS</li>
+                    <li class="bg-white p-6 shadow-lg rounded-lg">JavaScript</li>
+                    <li class="bg-white p-6 shadow-lg rounded-lg">Ruby</li>
+                    <li class="bg-white p-6 shadow-lg rounded-lg">Ruby on Rails</li>
+                    <li class="bg-white p-6 shadow-lg rounded-lg">Tailwind CSS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    </section>
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            &copy; 2024 Meu Portfólio. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão de voltar ao topo -->
+    <a href="#" class="btn-top bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hidden" onclick="topFunction()" id="btnTop">Topo</a>
+
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/1234567890" class="btn-whatsapp bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg shadow-md hidden" target="_blank">WhatsApp</a>
+
+    <!-- Script para mostrar/esconder o botão de voltar ao topo -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var btnTop = document.getElementById("btnTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTop.classList.remove("hidden");
+            } else {
+                btnTop.classList.add("hidden");
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+
+        // Função para alternar o menu mobile
+        function toggleMenu() {
+            var mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("hidden");
+        }
+    </script>
+
+    <!-- Script para mostrar o botão do WhatsApp -->
+    <script>
+        window.addEventListener("scroll", function() {
+            var btnWhatsApp = document.querySelector('.btn-whatsapp');
+            btnWhatsApp.classList.toggle("hidden", window.scrollY > 1000);
+        });
+    </script>
+
+</body>
 </html>

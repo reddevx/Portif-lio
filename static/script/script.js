@@ -1,21 +1,12 @@
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  const htmlElement = document.documentElement;
 
-  themeToggleBtn.addEventListener('click', () => {
-    if (htmlElement.classList.contains('dark')) {
-      htmlElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    } else {
-      htmlElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  });
+document.getElementById('copyEmailButton').addEventListener('click', function() {
+  const email = 'seu.email@exemplo.com';
+  const el = document.createElement('textarea');
+  el.value = email;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
 
-  // Preserva a escolha do usuário entre sessões
-  if (localStorage.getItem('theme') === 'dark' || 
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    htmlElement.classList.add('dark');
-  } else {
-    htmlElement.classList.remove('dark');
-  }
-
+  alert('Email copiado: ' + email);
+});
