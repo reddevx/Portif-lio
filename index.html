@@ -209,16 +209,43 @@ document.getElementById('copyEmailButton').addEventListener('click', function() 
     });
   });
 </script>
-<section class="py-16 bg-white">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Sobre mim
-          </h2>
-          <p class="mt-4 text-lg text-gray-600">
-              Olá! Meu nome é Juan e sou um desenvolvedor Fullstack apaixonado por criar soluções web eficientes. Com experiência em Ruby on Rails, PHP e muito mais, estou sempre buscando aprender e evoluir minhas habilidades.
-          </p>
+
+
+<section id="about-me" class="py-16 bg-gray-100 mt-3">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+      <div class="md:flex items-center">
+        <div class="md:flex-shrink-0 relative group">
+          <img class="h-96 w-full object-cover fade-in md:h-full md:w-96 rounded-l-xl transition duration-300 transform group-hover:scale-105"
+            src="/static/img/juan.jpeg" alt="Foto do dentista">
+          <div
+            class="image-overlay bg-black bg-opacity-50 text-white text-center absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="flex h-full justify-center items-center">
+              <div>
+                <p class="text-lg font-semibold fade-in">Juan Coutinho dos Santos</p>
+                <p class="text-sm fade-in">Desenvolvedor Fullstack</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 fade-in">
+          <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Sobre Mim</div>
+          <h2 class="block mt-1 text-2xl leading-tight font-medium text-black">Juan Coutinho </h2>
+          <p class="mt-2 text-gray-600">Sou um dentista apaixonado por proporcionar sorrisos saudáveis e
+            bonitos aos
+            meus pacientes. Com mais de 10 anos de experiência, tenho dedicado minha carreira ao cuidado
+            odontológico
+            de qualidade, utilizando tecnologias avançadas e tratamentos personalizados.</p>
+          <p class="mt-4 text-gray-600">Meu objetivo é oferecer um atendimento humanizado e eficaz, buscando
+            sempre as
+            melhores soluções para a saúde bucal de cada paciente, promovendo sua autoestima e bem-estar.</p>
+          <div class="mt-6">
+            <a href="#"
+              class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300 ease-in-out">Marcar uma reunião</a>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 </section>
 
@@ -233,63 +260,258 @@ document.getElementById('copyEmailButton').addEventListener('click', function() 
       <!-- Exemplo de lista de projetos -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Projeto 1 -->
-        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-          <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1" class="w-full h-48 object-cover mb-4 rounded-md">
-          <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-          <div class="flex justify-center space-x-4">
-            <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">GitHub</a>
-            <a href="https://www.seusite.com/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">Ver site</a>
-          </div>
-        </div>
-        <!-- Projeto 2 -->
-        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-          <img src="https://raw.githubusercontent.com/reddevx/payflow-php/master/static/images/scrennshot.png" alt="Projeto 2" class="w-full h-48 object-cover mb-4 rounded-md">
-          <h3 class="text-xl font-bold mb-2">PayFlow</h3>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-          <div class="flex justify-center space-x-4">
-            <a href="https://github.com/seu-usuario/projeto-2" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">GitHub</a>
-            <a href="https://payflow-php.000webhostapp.com/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">Ver site</a>
-          </div>
-        </div>
+      <!-- Projeto 1 -->
+<div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+  <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1" class="w-full h-48 object-cover mb-4 rounded-md">
+  <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
+  <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+  <div class="flex justify-start space-x-4"> <!-- Alteração aqui: justify-start para alinhar à esquerda -->
+    <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+      <i class="bi bi-git text-lg"></i> Github
+    </a>
+    <a href="https://www.seusite.com/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+      <i class="bi bi-box-arrow-up-right text-lg"></i> Ver site
+    </a>
+  </div>
+</div>
+
+       <!-- Projeto 1 -->
+<div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+  <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1" class="w-full h-48 object-cover mb-4 rounded-md">
+  <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
+  <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+  <div class="flex justify-start space-x-4"> <!-- Alteração aqui: justify-start para alinhar à esquerda -->
+    <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+      <i class="bi bi-git text-lg"></i> Github
+    </a>
+    <a href="https://www.seusite.com/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+      <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+    </a>
+  </div>
+</div>
+
         <!-- Projeto 3 -->
-        <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-          <img src="/caminho/para/sua/imagem3.jpg" alt="Projeto 3" class="w-full h-48 object-cover mb-4 rounded-md">
-          <h3 class="text-xl font-bold mb-2">Projeto 3</h3>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-          <div class="flex justify-center space-x-4">
-            <a href="https://github.com/seu-usuario/projeto-3" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">GitHub</a>
-            <a href="https://www.seusite.com/projeto-3" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">Ver site</a>
-          </div>
-        </div>
+    <!-- Projeto 1 -->
+<div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+  <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1" class="w-full h-48 object-cover mb-4 rounded-md">
+  <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
+  <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+  <div class="flex justify-start space-x-4"> <!-- Alteração aqui: justify-start para alinhar à esquerda -->
+    <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+      <i class="bi bi-git text-lg"></i> Github<!-- Alteração aqui: text-lg para aumentar o ícone -->
+    </a>
+    <a href="https://www.seusite.com/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+      <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+    </a>
+  </div>
+</div>
+
       </div>
     </div>
   </div>
 </section>
 
-
-    <!-- Habilidades -->
-    <section id="habilidades" class="py-20 bg-gray-200">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-12 ">Habilidades</h2>
-                <!-- Lista de habilidades -->
-                <ul class="grid grid-cols-2 sm:grid-cols-3 gap-8">
-                    <li class="bg-white p-6 shadow-lg rounded-lg">HTML</li>
-                    <li class="bg-white p-6 shadow-lg rounded-lg">CSS</li>
-                    <li class="bg-white p-6 shadow-lg rounded-lg">JavaScript</li>
-                    <li class="bg-white p-6 shadow-lg rounded-lg">Ruby</li>
-                    <li class="bg-white p-6 shadow-lg rounded-lg">Ruby on Rails</li>
-                    <li class="bg-white p-6 shadow-lg rounded-lg">Tailwind CSS</li>
-                </ul>
-            </div>
-        </div>
+<!-- Habilidades -->
+<section id="habilidades" class="py-20 bg-gray-200">
+  <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-12">Habilidades em Programação</h2>
+          <!-- Lista de habilidades -->
+          <ul class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+              <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                  <img src="/static/img/html.png" alt="HTML" class="w-16 h-16 mx-auto mb-4">
+                  <p class="text-lg font-medium">HTML</p>
+              </li>
+              <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                  <img src="/static/img/css-3.png" alt="CSS" class="w-16 h-16 mx-auto mb-4">
+                  <p class="text-lg font-medium">CSS</p>
+              </li>
+              <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                  <img src="/static/img/js.png" alt="JavaScript" class="w-16 h-16 mx-auto mb-4">
+                  <p class="text-lg font-medium">JavaScript</p>
+              </li>
+              <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                  <img src="/static/img/ruby.png" alt="Ruby" class="w-16 h-16 mx-auto mb-4">
+                  <p class="text-lg font-medium">Ruby</p>
+              </li>
+              <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCDTl9Kf8iMHie5oQ-9ROCBDhQHtTQPDz8cg&s" alt="Ruby on Rails" class="w-16 h-16 mx-auto mb-4">
+                  <p class="text-lg font-medium">Ruby on Rails</p>
+              </li>
+              <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                  <img src="/static/img/tailwind.png" alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4">
+                  <p class="text-lg font-medium">Tailwind CSS</p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</section>
     </section>
 
     
-    </section>
+    <!-- Seção de Serviços -->
+<section id="servicos" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+
+          <h2 class="text-4xl font-bold mb-12">Serviços</h2>
+      
+          <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg mb-8">
+            <h3 class="text-2xl font-bold mb-4">Serviços Prestados</h3>
+        
+            <!-- Abas de serviços -->
+            <div x-data="{ activeTab: 'web-development' }">
+                <div class="flex space-x-4 mb-4">
+                    <!-- Aba de Desenvolvimento Web -->
+                    <button 
+                        @click="activeTab = 'web-development'"
+                        :class="{ 'bg-blue-500 text-white': activeTab === 'web-development', 'text-gray-700 dark:text-gray-300': activeTab !== 'web-development' }"
+                        class="flex-1 py-2 px-4 rounded-lg text-lg font-medium focus:outline-none transition duration-300 ease-in-out hover:bg-blue-600 hover:text-white"
+                    >
+                        Desenvolvimento Web
+                    </button>
+        
+                    <!-- Aba de Landing Pages -->
+                    <button 
+                        @click="activeTab = 'landing-pages'"
+                        :class="{ 'bg-blue-500 text-white': activeTab === 'landing-pages', 'text-gray-700 dark:text-gray-300': activeTab !== 'landing-pages' }"
+                        class="flex-1 py-2 px-4 rounded-lg text-lg font-medium focus:outline-none transition duration-300 ease-in-out hover:bg-blue-600 hover:text-white"
+                    >
+                        Landing Pages
+                    </button>
+        
+                    <!-- Aba de Integração com Hotmart -->
+                    <button 
+                        @click="activeTab = 'hotmart-integration'"
+                        :class="{ 'bg-blue-500 text-white': activeTab === 'hotmart-integration', 'text-gray-700 dark:text-gray-300': activeTab !== 'hotmart-integration' }"
+                        class="flex-1 py-2 px-4 rounded-lg text-lg font-medium focus:outline-none transition duration-300 ease-in-out hover:bg-blue-600 hover:text-white"
+                    >
+                        Integração Hotmart
+                    </button>
+                </div>
+        
+                <!-- Conteúdo das abas -->
+                <div x-show="activeTab === 'web-development'">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                            <h4 class="text-lg font-bold mb-2">Desenvolvimento Web</h4>
+                            <p class="text-gray-700 dark:text-gray-300">Ofereço soluções completas de desenvolvimento web utilizando tecnologias modernas como Ruby on Rails, PHP, e frameworks front-end como Tailwind CSS.</p>
+                        </div>
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                            <h4 class="text-lg font-bold mb-2">Exemplos:</h4>
+                            <ul class="flex flex-col">
+                                <li>Sites institucionais</li>
+                                <li>Sistemas web personalizados</li>
+                                <li>Aplicações web escaláveis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div x-show="activeTab === 'landing-pages'">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                            <h4 class="text-lg font-bold mb-2">Landing Pages</h4>
+                            <p class="text-gray-700 dark:text-gray-300">Desenvolvimento de landing pages otimizadas para conversão, utilizando design responsivo e técnicas avançadas de SEO para atrair mais visitantes e gerar leads qualificados.</p>
+                        </div>
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                            <h4 class="text-lg font-bold mb-2">Personalização:</h4>
+                            <ul class="flex flex-col">
+                                <li>Design personalizado</li>
+                                <li>Otimização para SEO</li>
+                                <li>Integração com sistemas de automação</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div x-show="activeTab === 'hotmart-integration'">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                            <h4 class="text-lg font-bold mb-2">Integração Hotmart</h4>
+                            <p class="text-gray-700 dark:text-gray-300">Integração completa com a plataforma Hotmart para venda de cursos online, produtos digitais e afiliação, automatizando processos de venda e gerenciamento de produtos.</p>
+                        </div>
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                          <h4 class="text-lg font-bold mb-2">Benefícios:</h4>
+                          <ul class="flex flex-col">
+                              <li class="bg-white dark:bg-gray-800 px-3 py-1 rounded-lg text-gray-700 dark:text-gray-300 mb-2">Aumento das vendas online</li>
+                              <li class="bg-white dark:bg-gray-800 px-3 py-1 rounded-lg text-gray-700 dark:text-gray-300 mb-2">Gestão eficiente de afiliados</li>
+                              <li class="bg-white dark:bg-gray-800 px-3 py-1 rounded-lg text-gray-700 dark:text-gray-300 mb-2">Relatórios detalhados de performance</li>
+                          </ul>
+                      </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        
+      
+          <!-- Descrição dos Serviços -->
+          <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg mb-8">
+              <h3 class="text-xl font-bold mb-4">Serviços Prestados</h3>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Ofereço soluções completas de desenvolvimento web utilizando tecnologias modernas como Ruby on Rails, PHP, e frameworks front-end como Tailwind CSS.</p>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Desde a criação de sites institucionais até sistemas web personalizados, estou pronto para ajudar a transformar suas ideias em realidade digital.</p>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Se você tem um projeto em mente ou precisa de uma consultoria técnica, estou à disposição para discutir suas necessidades e encontrar a melhor solução para você.</p>
+          </div>
+          <!-- Call to Action -->
+          <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg">
+              <h3 class="text-xl font-bold mb-4">Gostaria de fechar um projeto?</h3>
+              <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Mande uma mensagem e vamos transformar sua ideia em realidade!</p>
+              <a href="#contato" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300 ease-in-out">Enviar Mensagem</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Seção de Contato -->
+<section id="contato" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-12">Contato</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <!-- Informações de Contato -->
+              <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg">
+                  <h3 class="text-xl font-bold mb-4">Informações de Contato</h3>
+                  <ul class="text-lg text-gray-700 dark:text-gray-300">
+                      <li class="flex items-center mb-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-500 dark:text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 1a7 7 0 1 1 0 14A7 7 0 0 1 10 3zm1 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-3-3h2a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm4-9a5 5 0 0 0-4 7.835V12a5 5 0 0 0 8 .393V7.835A5 5 0 0 0 12 3z" clip-rule="evenodd" />
+                          </svg>
+                          juan.devx@gmail.com
+                      </li>
+                      <li class="flex items-center mb-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-blue-500 dark:text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M10 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 1a7 7 0 1 1 0 14A7 7 0 0 1 10 3zM5 10a5 5 0 1 1 10 0 5 5 0 0 1-10 0zm9-2a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" clip-rule="evenodd" />
+                          </svg>
+                          +55 11 98765-4321
+                      </li>
+                  </ul>
+              </div>
+              <!-- Redes Sociais -->
+              <div class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg">
+                  <h3 class="text-xl font-bold mb-4">Redes Sociais</h3>
+                  <div class="flex justify-around items-center">
+                      <a href="#" target="_blank" class="text-blue-500 text-3xl hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a href="#" target="_blank" class="text-blue-500 text-3xl hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                        <i class="bi bi-whatsapp"></i>
+                      </a>
+                      <a href="#" target="_blank" class="text-blue-500 text-3xl hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
     <!-- Rodapé -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-gray-100 text-gray-900 py-6">
         <div class="container mx-auto px-4 text-center">
             &copy; 2024 Meu Portfólio. Todos os direitos reservados.
         </div>
