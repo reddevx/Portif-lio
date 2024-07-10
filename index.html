@@ -11,51 +11,46 @@
   <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
-<body class="bg-white text-gray-900"><nav class="bg-white shadow-md p-4 fixed w-full top-0 z-10">
-  <div class="container mx-auto flex justify-between items-center">
+<body class="bg-white text-gray-900">
+
+  <nav id="navbar" class="bg-white shadow-md p-4 fixed w-full top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
-          <span class="text-gray-800 text-lg ml-2">Juan Coutinho</span>
+        <span class="text-gray-800 text-lg ml-2">Juan Coutinho</span>
       </div>
       <!-- Ícone do menu para dispositivos móveis -->
       <div class="md:hidden">
-          <button id="menuBtn" class="text-gray-600 hover:text-gray-800 focus:outline-none">
-              <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
-                  <path fill-rule="evenodd" d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zM2 9a1 1 0 100 2h14a1 1 0 100-2H3zm17 3a1 1 0 100 2H3a1 1 0 100-2h16z" clip-rule="evenodd" />
-              </svg>
-          </button>
+        <button id="menuBtn" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
+            <path fill-rule="evenodd"
+              d="M2 5a1 1 0 011-1h14a1 1 0 110 2H3a1 1 0 01-1-1zM2 9a1 1 0 100 2h14a1 1 0 100-2H3zm17 3a1 1 0 100 2H3a1 1 0 100-2h16z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
       </div>
       <!-- Menu para desktop -->
       <div class="hidden md:flex md:items-center md:w-auto">
-          <a href="#" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Início</a>
-          <a href="#" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Projetos</a>
-          <a href="#" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Sobre</a>
-          <a href="#" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Contato</a>
+        <a href="#home" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Início</a>
+        <a href="#about-me" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Sobre Mim</a>
+        <a href="#abilities" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Habilidades</a>
+        <a href="#projects" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Projetos</a>
+        <a href="#services" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Serviços</a>
+        <a href="#contact" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Contato</a>
       </div>
-  </div>
-  <!-- Menu responsivo para dispositivos móveis -->
-  <div id="mobileMenu" class="md:hidden hidden bg-white shadow-md">
+    </div>
+    <!-- Menu responsivo para dispositivos móveis -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white shadow-md">
       <div class="px-2 pt-2 pb-4">
-          <a href="#" class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Início</a>
-          <a href="#" class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Projetos</a>
-          <a href="#" class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Sobre</a>
-          <a href="#" class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Contato</a>
+        <a href="#" class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Início</a>
+        <a href="#"
+          class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Projetos</a>
+        <a href="#" class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Sobre</a>
+        <a href="#" class="block text-gray-800 px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Contato</a>
       </div>
-  </div>
-</nav>
+    </div>
+  </nav>
 
-<!-- Script para mostrar/ocultar o menu responsivo -->
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-  });
-</script>
-
-
-  <!-- Sobre mim -->
-  <section id="sobre" class="py-20 bg-gray-100 p-10 mt-20">
+  <section id="home" class="py-20 bg-gray-100 p-10 mt-20">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center">
@@ -97,122 +92,8 @@
     </div>
   </section>
 
-  <script>
-    document.getElementById('copyEmailButton').addEventListener('click', function () {
-      const email = 'juan.devx@gmail.com';
-      const el = document.createElement('textarea');
-      el.value = email;
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand('copy');
-      document.body.removeChild(el);
-
-      const tooltipText = document.getElementById('tooltipText');
-      tooltipText.innerText = 'Copiado!';
-      setTimeout(function () {
-        tooltipText.innerText = 'Copiar';
-      }, 2000);
-    });
-  </script>
-
-  <style>
-    #copyEmailButton:hover+#tooltipText {
-      opacity: 1;
-    }
-  </style>
-
-
-  <script>
-    document.getElementById('copyEmailButton').addEventListener('click', function () {
-      const email = 'juan.devx@gmail.com';
-      const el = document.createElement('textarea');
-      el.value = email;
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand('copy');
-      document.body.removeChild(el);
-
-      const tooltipText = document.getElementById('tooltipText');
-      tooltipText.innerText = 'Copiado!';
-      setTimeout(function () {
-        tooltipText.innerText = 'Copiar';
-      }, 2000);
-    });
-  </script>
-
-
-
-  <button id="btnScrollToTop" title="Voltar ao Topo">↑</button>
-
-  <!-- Botão do WhatsApp -->
-  <a href="https://wa.me/1234567890"
-    class="btn-whatsapp bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg shadow-md" target="_blank"><i
-      class="bi bi-whatsapp"></i></a>
-  <script>
-    // Mostrar/esconder o botão de voltar ao topo
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      var btnTop = document.getElementById("btnTop");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        btnTop.style.display = "block";
-      } else {
-        btnTop.style.display = "none";
-      }
-    }
-
-    function topFunction() {
-      document.body.scrollTop = 0; // Para Safari
-      document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
-    }
-
-    // Mostrar o botão do WhatsApp
-    window.addEventListener("scroll", function () {
-      var btnWhatsApp = document.querySelector('.btn-whatsapp');
-      btnWhatsApp.style.display = "block";
-    });
-  </script>
-
-  <style>
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const faders = document.querySelectorAll('.fade-in');
-      const options = {
-        threshold: 0.1
-      };
-
-      const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add('visible');
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      }, options);
-
-      faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-      });
-    });
-  </script>
-
-
-  <section id="about-me" class="py-16 bg-gray-100 mt-3">
-    <div class="container mx-auto px-4">
+  <section id="about-me" class="fade-in mt-10 p-10 bg-gray-100 mt-3">
+    <div class="container mx-auto px-4 mt-10">
       <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
         <div class="md:flex items-center">
           <div class="md:flex-shrink-0 relative group">
@@ -232,18 +113,15 @@
           <div class="p-8 fade-in">
             <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Sobre Mim</div>
             <h2 class="block mt-1 text-2xl leading-tight font-medium text-black">Juan Coutinho </h2>
-            <p class="mt-2 text-gray-600">Sou um dentista apaixonado por proporcionar sorrisos saudáveis e
-              bonitos aos
-              meus pacientes. Com mais de 10 anos de experiência, tenho dedicado minha carreira ao cuidado
-              odontológico
-              de qualidade, utilizando tecnologias avançadas e tratamentos personalizados.</p>
-            <p class="mt-4 text-gray-600">Meu objetivo é oferecer um atendimento humanizado e eficaz, buscando
-              sempre as
-              melhores soluções para a saúde bucal de cada paciente, promovendo sua autoestima e bem-estar.</p>
+            <p class="mt-2 text-gray-600">Sou um Desenvolvedor Fullstack focado em Ruby on Rails e PHP, com um ano e
+              meio de experiência. Especialista em Ruby, desenvolvo soluções robustas com Rails. No frontend, uso HTML5,
+              CSS3, Bootstrap, Tailwind e JavaScript; no backend, Ruby, PHP, MySQL e PostgreSQL.
+              Tenho experiência em APIs, design responsivo e metodologias ágeis. Atualmente, aprofundo meus
+              conhecimentos em testes com Rspec e AWS, além de explorar PowerBI, Git e GitHub.</p>
             <div class="mt-6">
               <a href="#"
                 class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300 ease-in-out">Marcar
-                uma reunião</a>
+                uma reunião <i class="bi bi-telephone-fill p-1"></i></a>
             </div>
           </div>
         </div>
@@ -251,83 +129,10 @@
     </div>
   </section>
 
-
-
-
-  <!-- Projetos -->
-  <section id="projetos" class="py-20 mt-10 bg-gray-100 dark:bg-gray-900">
-    <div class="container mx-auto px-4">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12 ">Projetos</h2>
-        <!-- Exemplo de lista de projetos -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          <!-- Projeto 1 -->
-          <!-- Projeto 1 -->
-          <div
-            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-            <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1"
-              class="w-full h-48 object-cover mb-4 rounded-md">
-            <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-            <div class="flex justify-start space-x-4"> <!-- Alteração aqui: justify-start para alinhar à esquerda -->
-              <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-git text-lg"></i> Github
-              </a>
-              <a href="https://www.seusite.com/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver site
-              </a>
-            </div>
-          </div>
-
-          <!-- Projeto 1 -->
-          <div
-            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-            <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1"
-              class="w-full h-48 object-cover mb-4 rounded-md">
-            <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-            <div class="flex justify-start space-x-4"> <!-- Alteração aqui: justify-start para alinhar à esquerda -->
-              <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-git text-lg"></i> Github
-              </a>
-              <a href="https://www.seusite.com/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-            <img src="/static/img/WhatsApp Image 2024-07-09 at 14.56.42.jpeg" alt="Projeto 1"
-              class="w-full h-48 object-cover mb-4 rounded-md">
-            <h3 class="text-xl font-bold mb-2">Site Dentista Profissional</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-            <div class="flex justify-start space-x-4"> <!-- Alteração aqui: justify-start para alinhar à esquerda -->
-              <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-git text-lg"></i> Github<!-- Alteração aqui: text-lg para aumentar o ícone -->
-              </a>
-              <a href="https://www.seusite.com/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Habilidades -->
-  <section id="habilidades" class="py-20 bg-gray-200">
-    <div class="container mx-auto px-4">
+  <section id="abilities" class="fade-in p-5 mt-5 bg-gray-200">
+    <div class="container mx-auto px-4 p-7 mt-7">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-12">Habilidades em Programação</h2>
-        <!-- Lista de habilidades -->
         <ul class="grid grid-cols-2 sm:grid-cols-3 gap-8">
           <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
             <img src="/static/img/html.png" alt="HTML" class="w-16 h-16 mx-auto mb-4">
@@ -351,18 +156,84 @@
             <p class="text-lg font-medium">Ruby on Rails</p>
           </li>
           <li class="bg-white p-6 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-            <img src="/static/img/tailwind.png" alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4">
+            <img src="/static/img/image-removebg-preview (1).png" alt="Tailwind CSS" class="w-16 h-16 mx-auto mb-4">
             <p class="text-lg font-medium">Tailwind CSS</p>
           </li>
         </ul>
       </div>
     </div>
   </section>
+
+  <section id="projects" class="fade-in bg-gray-100 dark:bg-gray-900 mt-10">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12">Projetos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- Projeto 1 -->
+          <div
+            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+            <div class="aspect-w-16 aspect-h-9"> <!-- Container para manter a proporção -->
+              <img src="/static/img/rodrigo-rosa.jpeg" alt="Projeto 1" class="w-full h-full object-cover rounded-md">
+            </div>
+            <h3 class="text-xl font-bold mt-4 mb-2">Site Dentista Profissional</h3>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+            <div class="flex justify-start space-x-4">
+              <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <i class="bi bi-git text-lg"></i> Github
+              </a>
+              <a href="https://www.seusite.com/projeto-1" target="_blank"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver site
+              </a>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div
+            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+            <div class="aspect-w-16 aspect-h-9"> <!-- Container para manter a proporção -->
+              <img src="/static/img/onix.jpeg" alt="Projeto 2" class="w-full h-full object-cover rounded-md">
+            </div>
+            <h3 class="text-xl font-bold mt-4 mb-2">Site Onix</h3>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+            <div class="flex justify-start space-x-4">
+              <a href="https://github.com/seu-usuario/projeto" target="_blank"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <i class="bi bi-git text-lg"></i> Github
+              </a>
+              <a href="https://www.seusite.com/projeto-1" target="_blank"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+              </a>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div
+            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
+            <div class="aspect-w-16 aspect-h-15"> <!-- Container para manter a proporção -->
+              <img src="/static/img/devsync.jpeg" alt="Projeto 3" class="w-full h-full object-cover rounded-md">
+            </div>
+            <h3 class="text-xl font-bold mt-4 mb-2">Devsync</h3>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
+            <div class="flex justify-start space-x-4">
+              <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <i class="bi bi-git text-lg"></i> Github
+              </a>
+              <a href="https://www.seusite.com/projeto-1" target="_blank"
+                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-
-  <!-- Seção de Serviços -->
-  <section id="servicos" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <section id="services" class="py-20 fade-in bg-gray-100 dark:bg-gray-900">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
 
@@ -460,8 +331,6 @@
           </div>
         </div>
       </div>
-
-
       <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto text-center">
 
@@ -491,9 +360,7 @@
       </div>
   </section>
 
-
-  <!-- Seção de Contato -->
-  <section id="contato" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <section id="contact" class="py-20 fade-in bg-gray-100 dark:bg-gray-900">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-12">Contato</h2>
@@ -545,24 +412,59 @@
     </div>
   </section>
 
+  <section id="footer" class="fade-in">
+    <footer class="bg-gray-100 text-gray-900 py-6">
+      <div class="container mx-auto px-4 text-center">
+        &copy; 2024 Meu Portfólio. Todos os direitos reservados.
+      </div>
+    </footer>
+  </section>
 
-  <!-- Rodapé -->
-  <footer class="bg-gray-100 text-gray-900 py-6">
-    <div class="container mx-auto px-4 text-center">
-      &copy; 2024 Meu Portfólio. Todos os direitos reservados.
-    </div>
-  </footer>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-  <!-- Botão de voltar ao topo -->
-  <a href="#" class="btn-top bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hidden"
-    onclick="topFunction()" id="btnTop">Topo</a>
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
-  <!-- Botão do WhatsApp -->
-  <a href="https://wa.me/1234567890"
-    class="btn-whatsapp bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg shadow-md hidden"
-    target="_blank">WhatsApp</a>
+  <script>
+    document.getElementById('copyEmailButton').addEventListener('click', function () {
+      const email = 'juan.devx@gmail.com';
+      const el = document.createElement('textarea');
+      el.value = email;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
 
-  <!-- Script para mostrar/esconder o botão de voltar ao topo -->
+      const tooltipText = document.getElementById('tooltipText');
+      tooltipText.innerText = 'Copiado!';
+      setTimeout(function () {
+        tooltipText.innerText = 'Copiar';
+      }, 2000);
+    });
+  </script>
+
+  <script>
+    document.getElementById('copyEmailButton').addEventListener('click', function () {
+      const email = 'juan.devx@gmail.com';
+      const el = document.createElement('textarea');
+      el.value = email;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+
+      const tooltipText = document.getElementById('tooltipText');
+      tooltipText.innerText = 'Copiado!';
+      setTimeout(function () {
+        tooltipText.innerText = 'Copiar';
+      }, 2000);
+    });
+  </script>
+
   <script>
     window.onscroll = function () { scrollFunction() };
 
@@ -587,7 +489,6 @@
     }
   </script>
 
-  <!-- Script para mostrar o botão do WhatsApp -->
   <script>
     window.addEventListener("scroll", function () {
       var btnWhatsApp = document.querySelector('.btn-whatsapp');
@@ -595,6 +496,29 @@
     });
   </script>
 
+  <script id="fade-in">
+    document.addEventListener("DOMContentLoaded", function () {
+      const faders = document.querySelectorAll('.fade-in');
+      const options = {
+        threshold: 0.1
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add('visible');
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    });
+  </script>
 </body>
 
 </html>
