@@ -4,7 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan C.</title>
+  <meta name="description" content="Portfólio de Juan Coutinho, Desenvolvedor Fullstack com experiência em Ruby on Rails e PHP.">
+  <meta name="keywords" content="Juan Coutinho, Desenvolvedor Fullstack, Ruby on Rails, PHP, Web Development, Programador">
+  <meta name="author" content="Juan Coutinho">
+  <title>Juan Coutinho | Desenvolvedor Fullstack</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Juan Coutinho | Desenvolvedor Fullstack">
+  <meta property="og:description" content="Portfólio de Juan Coutinho, Desenvolvedor Fullstack com experiência em Ruby on Rails e PHP.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://juancoutinho.online">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juan Coutinho | Desenvolvedor Fullstack">
+  <meta name="twitter:description" content="Portfólio de Juan Coutinho, Desenvolvedor Fullstack com experiência em Ruby on Rails e PHP.">
+  <meta name="twitter:image" content="URL_DA_SUA_IMAGEM_DE_DESTAQUE">
+  <meta name="twitter:site" content="@SEU_USERNAME">
+
   <link rel="shortcut icon" href="/static/img/a.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
@@ -28,10 +46,14 @@
       <!-- Menu para desktop -->
       <div class="hidden md:flex md:items-center md:w-auto">
         <a href="#home" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Início</a>
-        <a href="#about-me" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Sobre Mim</a>
-        <a href="#abilities" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Habilidades</a>
-        <a href="#projects" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Projetos</a>
-        <a href="#services" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Serviços</a>
+        <a href="#about-me" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Sobre
+          Mim</a>
+        <a href="#abilities"
+          class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Habilidades</a>
+        <a href="#projects"
+          class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Projetos</a>
+        <a href="#services"
+          class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Serviços</a>
         <a href="#contact" class="text-gray-800 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Contato</a>
       </div>
     </div>
@@ -52,9 +74,8 @@
       <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center">
           <div
-            class="hidden sm:block relative w-72 h-72 md:w-96 md:h-96 overflow-hidden shadow-lg group rounded-lg border-4 border-blue-500 bg-gradient-to-br from-blue-500 to-purple-500">
-            <img src="/static/img/WhatsApp_Image_2024-06-30_at_22.36.55-removebg-preview.png" alt="Juan Coutinho"
-              class="object-cover w-full h-full">
+            class="hidden sm:block relative w-72 h-72 fade-in md:w-96 md:h-96 overflow-hidden shadow-lg group rounded-lg border-4 border-blue-500 bg-gradient-to-br from-blue-500 to-purple-500">
+            <img src="/static/img/juan.jpg" alt="Juan Coutinho" class="object-cover w-full h-full">
           </div>
 
         </div>
@@ -68,7 +89,7 @@
           </ul>
           <button
             class="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 transform hover:translate-x-1">
-             <a href="https://wa.me/5513996832181" target="_blank">Mande uma Mensagem</a>        
+            <a href="https://wa.me/5513996832181" target="_blank">Mande uma Mensagem</a>
             <svg class="w-5 h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -118,7 +139,7 @@
             <div class="mt-6">
               <a href="#"
                 class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300 ease-in-out">Marcar
-                 reunião <i class="bi bi-telephone-fill"></i></a>
+                reunião <i class="bi bi-telephone-fill"></i></a>
             </div>
           </div>
         </div>
@@ -165,138 +186,180 @@
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-12">Projetos</h2>
-  
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <!-- Projeto 1 -->
-          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+          <div
+            class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
             <div class="aspect-w-16 aspect-h-9">
               <img src="/static/img/rodrigo-rosa.jpeg" alt="Projeto 1" class="w-full h-full object-cover rounded-md">
             </div>
             <div class="flex flex-col flex-grow justify-between">
               <div>
                 <h3 class="text-xl font-bold mt-4 mb-2">Site Dentista Profissional</h3>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para o Dentista Rodrigo Rosa.</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para o Dentista Rodrigo
+                  Rosa.</p>
                 <div class="flex flex-wrap space-x-2 mb-4">
-                  
-                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
-                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Tailwind CSS</span>
+
+                  <span
+                    class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML
+                    & CSS</span>
+                  <span
+                    class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Tailwind
+                    CSS</span>
                 </div>
               </div>
               <div class="flex justify-start space-x-4">
-                <a href="https://github.com/reddevx/Dentista-Rodrigo-Rosa" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://github.com/reddevx/Dentista-Rodrigo-Rosa" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-git text-lg"></i> Github
                 </a>
-                <a href="https://dentista-rodrigo-rosa.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://dentista-rodrigo-rosa.vercel.app/" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-box-arrow-up-right text-lg"></i> Ver site
                 </a>
               </div>
             </div>
           </div>
-  
+
           <!-- Projeto 2 -->
-          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+          <div
+            class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
             <div class="aspect-w-16 aspect-h-9">
               <img src="/static/img/onix.jpeg" alt="Projeto 2" class="w-full h-full object-cover rounded-md">
             </div>
             <div class="flex flex-col flex-grow justify-between">
               <div>
                 <h3 class="text-xl font-bold mt-4 mb-2">Site Onix</h3>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para uma empresa de Tecnologia, construído no Hackathon de 2024.</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para uma empresa de
+                  Tecnologia, construído no Hackathon de 2024.</p>
                 <div class="flex flex-wrap space-x-2 mb-4">
-                  
-                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
-                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Bootstrap</span>
+
+                  <span
+                    class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML
+                    & CSS</span>
+                  <span
+                    class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Bootstrap</span>
                 </div>
               </div>
               <div class="flex justify-start space-x-4">
-                <a href="" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-git text-lg"></i> Github
                 </a>
-                <a href="https://site-equipe.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://site-equipe.vercel.app/" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
                 </a>
               </div>
             </div>
           </div>
-  
+
           <!-- Projeto 3 -->
-          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+          <div
+            class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
             <div class="aspect-w-16 aspect-h-15">
               <img src="/static/img/devsync.jpeg" alt="Projeto 3" class="w-full h-full object-cover rounded-md">
             </div>
             <div class="flex flex-col flex-grow justify-between">
               <div>
                 <h3 class="text-xl font-bold mt-4 mb-2">Devsync</h3>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para uma empresa de Desenvolvimento de Software & Consultoria e venda de sites.</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para uma empresa de
+                  Desenvolvimento de Software & Consultoria e venda de sites.</p>
                 <div class="flex flex-wrap space-x-2 mb-4">
-                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
-                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Bootstrap</span>
+                  <span
+                    class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML
+                    & CSS</span>
+                  <span
+                    class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Bootstrap</span>
                 </div>
               </div>
               <div class="flex justify-start space-x-4">
-                <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-git text-lg"></i> Github
                 </a>
-                <a href="https://devsync-psi.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://devsync-psi.vercel.app/" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
                 </a>
               </div>
             </div>
           </div>
-  
+
           <!-- Projeto 4 -->
-          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+          <div
+            class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
             <div class="aspect-w-16 aspect-h-9">
-              <img src="https://raw.githubusercontent.com/reddevx/payflow-php/master/static/images/scrennshot.png" alt="Projeto 4" class="w-full h-full object-cover rounded-md">
+              <img src="https://raw.githubusercontent.com/reddevx/payflow-php/master/static/images/scrennshot.png"
+                alt="Projeto 4" class="w-full h-full object-cover rounded-md">
             </div>
             <div class="flex flex-col flex-grow justify-between">
               <div>
                 <h3 class="text-xl font-bold mt-4 mb-2">PayFlow</h3>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Com uma interface intuitiva e recursos avançados, PayFlow visa simplificar a administração financeira, mantendo o controle total de suas finanças pessoais e corporativas.</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Com uma interface intuitiva e recursos
+                  avançados, PayFlow visa simplificar a administração financeira, mantendo o controle total de suas
+                  finanças pessoais e corporativas.</p>
                 <div class="flex flex-wrap space-x-2 mb-4">
-                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">PHP</span>
-                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
+                  <span
+                    class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">PHP</span>
+                  <span
+                    class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML
+                    & CSS</span>
                 </div>
               </div>
               <div class="flex justify-start space-x-4">
-                <a href="https://github.com/seu-usuario/projeto-4" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://github.com/seu-usuario/projeto-4" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-git text-lg"></i> Github
                 </a>
-                <a href="https://projeto4.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://projeto4.vercel.app/" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
                 </a>
               </div>
             </div>
           </div>
-  
+
           <!-- Projeto 5 -->
-          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+          <div
+            class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
             <div class="aspect-w-16 aspect-h-9">
-              <img src="https://media.licdn.com/dms/image/D4D22AQFnyO71YLM9LQ/feedshare-shrink_800/0/1720051488360?e=1723680000&v=beta&t=bE5280QYgG_6ivdNEwpoZ_n6XmVXSyHK08AdnQ3nY1M" alt="Projeto 5" class="w-full h-full object-cover rounded-md">
+              <img
+                src="https://media.licdn.com/dms/image/D4D22AQFnyO71YLM9LQ/feedshare-shrink_800/0/1720051488360?e=1723680000&v=beta&t=bE5280QYgG_6ivdNEwpoZ_n6XmVXSyHK08AdnQ3nY1M"
+                alt="Projeto 5" class="w-full h-full object-cover rounded-md">
             </div>
             <div class="flex flex-col flex-grow justify-between">
               <div>
                 <h3 class="text-xl font-bold mt-4 mb-2">Petbook</h3>
-                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">O Petbook é uma rede social para animais, criada para aumentar a visibilidade e proteção dos pets. Com funcionalidades como mensagens e postagens.</p>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">O Petbook é uma rede social para animais,
+                  criada para aumentar a visibilidade e proteção dos pets. Com funcionalidades como mensagens e
+                  postagens.</p>
                 <div class="flex flex-wrap space-x-2 mb-4">
-                  
-                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
-                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">PHP</span>
+
+                  <span
+                    class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML
+                    & CSS</span>
+                  <span
+                    class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">PHP</span>
                 </div>
               </div>
               <div class="flex justify-start space-x-4">
-                <a href="https://github.com/seu-usuario/projeto-5" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://github.com/seu-usuario/projeto-5" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-git text-lg"></i> Github
                 </a>
-                <a href="https://projeto5.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://projeto5.vercel.app/" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
                 </a>
               </div>
             </div>
           </div>
-  
+
           <!-- Projeto 6 -->
-          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+          <div
+            class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
             <div class="aspect-w-8 aspect-h-5">
               <img src="/static/img/health-track.png" alt="Projeto 6" class="w-full h-full object-cover rounded-md">
             </div>
@@ -305,26 +368,32 @@
                 <h3 class="text-xl font-bold mt-4 mb-2">Health Track</h3>
                 <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Em Desenvolvimento.</p>
                 <div class="flex flex-wrap space-x-2 mb-4">
-                  <span class="bg-red-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Ruby on Rails</span>
-                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Tailwind CSS</span>
+                  <span
+                    class="bg-red-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Ruby
+                    on Rails</span>
+                  <span
+                    class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Tailwind
+                    CSS</span>
                 </div>
               </div>
               <div class="flex justify-start space-x-4 hidden">
-                <a href="https://github.com/seu-usuario/projeto-6" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://github.com/seu-usuario/projeto-6" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-git text-lg"></i> Github
                 </a>
-                <a href="https://projeto6.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                <a href="https://projeto6.vercel.app/" target="_blank"
+                  class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
                   <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
                 </a>
               </div>
             </div>
           </div>
-  
+
         </div>
       </div>
     </div>
   </section>
-  
+
 
   <section id="services" class="py-20 fade-in bg-gray-100 dark:bg-gray-900">
     <div class="container mx-auto px-4">
@@ -444,7 +513,7 @@
             <h3 class="text-xl font-bold mb-4">Gostaria de fechar um projeto?</h3>
             <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Mande uma mensagem e vamos transformar sua ideia em
               realidade!</p>
-            <a href="#contato"
+            <a href="https://wa.me/5513996832181" target="_blank"
               class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300 ease-in-out">Enviar
               Mensagem</a>
           </div>
@@ -452,7 +521,46 @@
         </div>
       </div>
   </section>
-
+  
+  <!--
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Recomendações</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="flex items-center mb-4">
+                    <img class="w-12 h-12 rounded-full mr-4" src="path/to/image1.jpg" alt="Avatar 1">
+                    <div class="text-sm">
+                        <p class="text-gray-900 leading-none">Nome do Recomendador 1</p>
+                        <p class="text-gray-600">Cargo 1</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">"Juan é um desenvolvedor excepcional com uma habilidade incomparável para resolver problemas complexos. Ele sempre entrega resultados de alta qualidade e supera as expectativas."</p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="flex items-center mb-4">
+                    <img class="w-12 h-12 rounded-full mr-4" src="path/to/image2.jpg" alt="Avatar 2">
+                    <div class="text-sm">
+                        <p class="text-gray-900 leading-none">Nome do Recomendador 2</p>
+                        <p class="text-gray-600">Cargo 2</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">"Trabalhar com Juan foi uma experiência incrível. Sua expertise em Ruby on Rails e atenção aos detalhes fizeram toda a diferença em nossos projetos."</p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg shadow-lg transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="flex items-center mb-4">
+                    <img class="w-10 h-10 rounded-full mr-4" src="/static/img/juan.jpg" alt="Avatar 3">
+                    <div class="text-sm">
+                        <p class="text-gray-900 leading-none">Pedro Gomes</p>
+                        <p class="text-gray-600 small ">Desenvolvedor Frontend</p>
+                    </div>
+                </div>
+                <p class="text-gray-700">"Juan é um profissional dedicado e talentoso. Sua habilidade em integrar APIs complexas e desenvolver soluções eficientes é impressionante. Recomendo fortemente."</p>
+            </div>
+        </div>
+    </div>
+</section>
+-->
   <section id="contact" class="py-20 fade-in bg-gray-100 dark:bg-gray-900">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
@@ -463,7 +571,7 @@
             <h3 class="text-xl font-bold mb-4">Informações de Contato</h3>
             <ul class="text-lg text-gray-700 dark:text-gray-300">
               <li class="flex items-center mb-4">
-                <i class="bi bi-envelope-open-fill mr-2 text-blue-500"></i>  juan.devx@gmail.com
+                <i class="bi bi-envelope-open-fill mr-2 text-blue-500"></i> juan.devx@gmail.com
               </li>
               <li class="flex items-center mb-4 ">
                 <i class="bi bi-telephone-fill mr-2 text-blue-500"></i> +55 11 98765-4321
@@ -601,29 +709,31 @@
     });
   </script>
 
-<a href="https://wa.me/5513996832181" target="_blank" class="fixed left-4 bottom-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
-  <i class="bi bi-whatsapp"></i>
-</a>
+  <a href="https://wa.me/5513996832181" target="_blank"
+    class="fixed left-4 bottom-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
-<section>  
-<!-- Botão Flutuante de Subir ao Topo -->
-<button id="scrollTopButton" class="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-  <i class="bi bi-chevron-double-up"></i>
-</button>
+  <section>
+    <!-- Botão Flutuante de Subir ao Topo -->
+    <button id="scrollTopButton"
+      class="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+      <i class="bi bi-chevron-double-up"></i>
+    </button>
 
-<script>
-  // JavaScript para subir ao topo quando o botão é clicado
-const scrollTopButton = document.getElementById('scrollTopButton');
+    <script>
+      // JavaScript para subir ao topo quando o botão é clicado
+      const scrollTopButton = document.getElementById('scrollTopButton');
 
-scrollTopButton.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
+      scrollTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
 
-</script>
-</section>
+    </script>
+  </section>
 </body>
 
 </html>
