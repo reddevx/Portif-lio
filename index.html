@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
+  <title>Juan C.</title>
+  <link rel="shortcut icon" href="/static/img/a.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
@@ -62,12 +63,12 @@
           <p class="text-xl leading-relaxed font-medium text-gray-600">Desenvolvedor Web Fullstack</p>
           <ul class="flex space-x-4 text-2xl text-gray-800">
             <li><a href="#" class="hover:text-green-500"><i class="bi bi-whatsapp"></i></a></li>
-            <li><a href="#" class="hover:text-gray-900"><i class="bi bi-github"></i></a></li>
+            <li><a href="#" class="hover:text-purple-500"><i class="bi bi-github"></i></a></li>
             <li><a href="#" class="hover:text-blue-500"><i class="bi bi-linkedin"></i></a></li>
           </ul>
           <button
             class="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 transform hover:translate-x-1">
-            Mande uma Mensagem
+             <a href="https://wa.me/5513996832181" target="_blank">Mande uma Mensagem</a>        
             <svg class="w-5 h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -159,75 +160,171 @@
       </div>
     </div>
   </section>
-  
+
   <section id="projects" class="fade-in bg-gray-100 dark:bg-gray-900 mt-10">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-12">Projetos</h2>
+  
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <!-- Projeto 1 -->
-          <div
-            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-            <div class="aspect-w-16 aspect-h-9"> <!-- Container para manter a proporção -->
+          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+            <div class="aspect-w-16 aspect-h-9">
               <img src="/static/img/rodrigo-rosa.jpeg" alt="Projeto 1" class="w-full h-full object-cover rounded-md">
             </div>
-            <h3 class="text-xl font-bold mt-4 mb-2">Site Dentista Profissional</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-            <div class="flex justify-start space-x-4">
-              <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-git text-lg"></i> Github
-              </a>
-              <a href="https://www.seusite.com/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver site
-              </a>
+            <div class="flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-xl font-bold mt-4 mb-2">Site Dentista Profissional</h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para o Dentista Rodrigo Rosa.</p>
+                <div class="flex flex-wrap space-x-2 mb-4">
+                  
+                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
+                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Tailwind CSS</span>
+                </div>
+              </div>
+              <div class="flex justify-start space-x-4">
+                <a href="https://github.com/reddevx/Dentista-Rodrigo-Rosa" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-git text-lg"></i> Github
+                </a>
+                <a href="https://dentista-rodrigo-rosa.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-box-arrow-up-right text-lg"></i> Ver site
+                </a>
+              </div>
             </div>
           </div>
-
+  
           <!-- Projeto 2 -->
-          <div
-            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-            <div class="aspect-w-16 aspect-h-9"> <!-- Container para manter a proporção -->
+          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+            <div class="aspect-w-16 aspect-h-9">
               <img src="/static/img/onix.jpeg" alt="Projeto 2" class="w-full h-full object-cover rounded-md">
             </div>
-            <h3 class="text-xl font-bold mt-4 mb-2">Site Onix</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-            <div class="flex justify-start space-x-4">
-              <a href="https://github.com/seu-usuario/projeto" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-git text-lg"></i> Github
-              </a>
-              <a href="https://www.seusite.com/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
-              </a>
+            <div class="flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-xl font-bold mt-4 mb-2">Site Onix</h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para uma empresa de Tecnologia, construído no Hackathon de 2024.</p>
+                <div class="flex flex-wrap space-x-2 mb-4">
+                  
+                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
+                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Bootstrap</span>
+                </div>
+              </div>
+              <div class="flex justify-start space-x-4">
+                <a href="" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-git text-lg"></i> Github
+                </a>
+                <a href="https://site-equipe.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+                </a>
+              </div>
             </div>
           </div>
-
+  
           <!-- Projeto 3 -->
-          <div
-            class="bg-white dark:bg-gray-800 p-8 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl">
-            <div class="aspect-w-16 aspect-h-15"> <!-- Container para manter a proporção -->
+          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+            <div class="aspect-w-16 aspect-h-15">
               <img src="/static/img/devsync.jpeg" alt="Projeto 3" class="w-full h-full object-cover rounded-md">
             </div>
-            <h3 class="text-xl font-bold mt-4 mb-2">Devsync</h3>
-            <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Descrição breve do projeto.</p>
-            <div class="flex justify-start space-x-4">
-              <a href="https://github.com/seu-usuario/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-git text-lg"></i> Github
-              </a>
-              <a href="https://www.seusite.com/projeto-1" target="_blank"
-                class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
-                <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
-              </a>
+            <div class="flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-xl font-bold mt-4 mb-2">Devsync</h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Site institucional para uma empresa de Desenvolvimento de Software & Consultoria e venda de sites.</p>
+                <div class="flex flex-wrap space-x-2 mb-4">
+                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
+                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Bootstrap</span>
+                </div>
+              </div>
+              <div class="flex justify-start space-x-4">
+                <a href="https://github.com/seu-usuario/projeto-1" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-git text-lg"></i> Github
+                </a>
+                <a href="https://devsync-psi.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+                </a>
+              </div>
             </div>
           </div>
+  
+          <!-- Projeto 4 -->
+          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="https://raw.githubusercontent.com/reddevx/payflow-php/master/static/images/scrennshot.png" alt="Projeto 4" class="w-full h-full object-cover rounded-md">
+            </div>
+            <div class="flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-xl font-bold mt-4 mb-2">PayFlow</h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Com uma interface intuitiva e recursos avançados, PayFlow visa simplificar a administração financeira, mantendo o controle total de suas finanças pessoais e corporativas.</p>
+                <div class="flex flex-wrap space-x-2 mb-4">
+                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">PHP</span>
+                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
+                </div>
+              </div>
+              <div class="flex justify-start space-x-4">
+                <a href="https://github.com/seu-usuario/projeto-4" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-git text-lg"></i> Github
+                </a>
+                <a href="https://projeto4.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Projeto 5 -->
+          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="https://media.licdn.com/dms/image/D4D22AQFnyO71YLM9LQ/feedshare-shrink_800/0/1720051488360?e=1723680000&v=beta&t=bE5280QYgG_6ivdNEwpoZ_n6XmVXSyHK08AdnQ3nY1M" alt="Projeto 5" class="w-full h-full object-cover rounded-md">
+            </div>
+            <div class="flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-xl font-bold mt-4 mb-2">Petbook</h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">O Petbook é uma rede social para animais, criada para aumentar a visibilidade e proteção dos pets. Com funcionalidades como mensagens e postagens.</p>
+                <div class="flex flex-wrap space-x-2 mb-4">
+                  
+                  <span class="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">HTML & CSS</span>
+                  <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">PHP</span>
+                </div>
+              </div>
+              <div class="flex justify-start space-x-4">
+                <a href="https://github.com/seu-usuario/projeto-5" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-git text-lg"></i> Github
+                </a>
+                <a href="https://projeto5.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Projeto 6 -->
+          <div class="bg-white dark:bg-gray-800 p-3 shadow-lg rounded-lg transition duration-300 ease-in-out transform hover:translate-y-1 hover:shadow-xl flex flex-col">
+            <div class="aspect-w-8 aspect-h-5">
+              <img src="/static/img/health-track.png" alt="Projeto 6" class="w-full h-full object-cover rounded-md">
+            </div>
+            <div class="flex flex-col flex-grow justify-between">
+              <div>
+                <h3 class="text-xl font-bold mt-4 mb-2">Health Track</h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">Em Desenvolvimento.</p>
+                <div class="flex flex-wrap space-x-2 mb-4">
+                  <span class="bg-red-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">Ruby on Rails</span>
+                  <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Tailwind CSS</span>
+                </div>
+              </div>
+              <div class="flex justify-start space-x-4 hidden">
+                <a href="https://github.com/seu-usuario/projeto-6" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-git text-lg"></i> Github
+                </a>
+                <a href="https://projeto6.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-600 transition duration-300 ease-in-out">
+                  <i class="bi bi-box-arrow-up-right text-lg"></i> Ver Site
+                </a>
+              </div>
+            </div>
+          </div>
+  
         </div>
       </div>
     </div>
   </section>
+  
 
   <section id="services" class="py-20 fade-in bg-gray-100 dark:bg-gray-900">
     <div class="container mx-auto px-4">
